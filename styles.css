@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 
 .canvas {
@@ -20,6 +20,33 @@ body {
 
 .controls {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls_btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 20px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.11);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.controls_btns button:active {
+  transform: scale(0.95);
+}
+
+.controls .controls_btns {
+  margin-bottom: 30px;
 }
 
 .controls .controls_colors {
@@ -32,4 +59,8 @@ body {
   border-radius: 25px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.11);
   cursor: pointer;
+}
+
+.controls .controls_range {
+  margin-bottom: 30px;
 }
